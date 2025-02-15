@@ -9,10 +9,11 @@ body {
     text-align: center;
 }
 
+/* Encabezado */
 header {
     background-color: #ffb6c1;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 header h1 {
@@ -20,21 +21,43 @@ header h1 {
     font-size: 42px;
     font-weight: 700;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-nav ul {
+/* Menú desplegable con checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + label + .menu {
+    display: block;
+}
+
+label {
+    background: #ff69b4;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Menú */
+.menu {
+    display: none;
+}
+
+.menu ul {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.menu ul li {
+    padding: 10px;
 }
 
-nav ul li a {
+.menu ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 22px;
@@ -42,12 +65,13 @@ nav ul li a {
     transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #ff69b4;
+.menu ul li a:hover {
+    color: #ff1493;
 }
 
+/* Secciones */
 section {
-    padding: 50px 20px;
+    padding: 40px 5%;
 }
 
 h2 {
@@ -56,22 +80,22 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Galería en formato más horizontal */
 .galeria {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    white-space: nowrap;
 }
 
 .producto {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     overflow: hidden;
 }
 
@@ -80,45 +104,13 @@ h2 {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease;
 }
 
-.producto img:hover {
-    transform: scale(1.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
-}
-
-input, textarea, button {
-    padding: 12px;
-    border: 2px solid #ff69b4;
-    border-radius: 5px;
-    font-size: 18px;
-    font-family: 'Dancing Script', cursive;
-}
-
-button {
-    background-color: #ff69b4;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #ff1493;
-}
-
+/* Pie de página */
 footer {
     background-color: #ffb6c1;
     padding: 15px;
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
-      }
+}
