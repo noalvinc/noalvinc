@@ -72,6 +72,7 @@ header h1 {
 /* Secciones */
 section {
     padding: 40px 5%;
+    margin-top: 20px; /* Aseguramos que las secciones no se vean cubiertas */
 }
 
 h2 {
@@ -104,6 +105,20 @@ h2 {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* Sección de contacto */
+.contact-link {
+    color: #ff69b4;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.contact-link:hover {
+    color: #ff1493;
 }
 
 /* Pie de página */
