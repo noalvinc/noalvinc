@@ -23,19 +23,12 @@ header h1 {
     color: #fff;
 }
 
-/* Menú desplegable con checkbox */
-input[type="checkbox"] {
-    display: none;
-}
-
-input[type="checkbox"]:checked + label + .menu {
-    display: block;
-}
-
-label {
+/* Menú */
+.menu-toggle {
     background: #ff69b4;
     color: white;
     font-size: 18px;
+    border: none;
     padding: 10px 20px;
     cursor: pointer;
     display: block;
@@ -43,7 +36,7 @@ label {
     border-radius: 5px;
 }
 
-/* Menú */
+/* Menú desplegable */
 .menu {
     display: none;
 }
@@ -69,6 +62,17 @@ label {
     color: #ff1493;
 }
 
+/* Sección de contacto */
+#contacto {
+    padding: 20px;
+}
+
+#contacto p a {
+    font-size: 20px;
+    color: #ff69b4;
+    text-decoration: none;
+}
+
 /* Secciones */
 section {
     padding: 40px 5%;
@@ -80,7 +84,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Galería en formato más horizontal */
+/* Galería con imágenes horizontales */
 .galeria {
     display: flex;
     overflow-x: auto;
@@ -90,8 +94,8 @@ h2 {
 }
 
 .producto {
-    width: 180px;
-    height: 180px;
+    width: 150px;  /* Tamaño ajustado para las imágenes */
+    height: 150px;  /* Tamaño ajustado para las imágenes */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
