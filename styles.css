@@ -1,131 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
-
-body {
-    font-family: 'Dancing Script', cursive;
-    background-color: #ffe4e1;
-    color: #333;
+/* Reset de márgenes y padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo de la página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #1E88E5;
+    color: white;
+    padding: 20px 0;
     text-align: center;
 }
 
-/* Encabezado */
-header {
-    background-color: #ffb6c1;
-    padding: 20px;
-    position: relative;
-}
-
 header h1 {
-    margin: 0;
-    font-size: 42px;
-    font-weight: 700;
-    color: #fff;
+    font-size: 2.5rem;
 }
 
-/* Menú */
-.menu-toggle {
-    background: #ff69b4;
-    color: white;
-    font-size: 18px;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: block;
-    margin: 10px auto;
-    border-radius: 5px;
-}
-
-/* Menú plegable */
-.menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background-color: #ffb6c1;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.menu ul {
+header nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 10px 0;
 }
 
-.menu ul li {
-    padding: 10px;
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.menu ul li a {
+header nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 600;
-    transition: color 0.3s;
+    font-size: 1.1rem;
 }
 
-.menu ul li a:hover {
-    color: #ff1493;
+header nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Secciones */
+/* Estilos para las secciones */
 section {
-    padding: 40px 5%;
-    margin-top: 20px; /* Aseguramos que las secciones no se vean cubiertas */
+    padding: 40px 0;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    font-size: 30px;
-    color: #ff69b4;
+section h2 {
+    font-size: 2rem;
+    color: #1E88E5;
     margin-bottom: 20px;
 }
 
-/* Galería con imágenes horizontales */
-.galeria {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding: 10px;
-    white-space: nowrap;
+/* Estilos de los párrafos y listas */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
-.producto {
-    width: 150px;  /* Tamaño ajustado para las imágenes */
-    height: 150px;  /* Tamaño ajustado para las imágenes */
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: inline-block;
-    overflow: hidden;
+ul {
+    list-style: none;
+    padding-left: 20px;
 }
 
-.producto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
-/* Sección de contacto */
-.contact-link {
-    color: #ff69b4;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    display: inline-block;
+ul li strong {
+    color: #1E88E5;
 }
 
-.contact-link:hover {
-    color: #ff1493;
-}
-
-/* Pie de página */
-footer {
-    background-color: #ffb6c1;
+/* Estilo para los testimonios */
+blockquote {
+    background-color: #f4f4f4;
+    border-left: 5px solid #1E88E5;
     padding: 15px;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+blockquote p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #1E88E5;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Estilo para enlaces de navegación cuando se pasa el ratón */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
     }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
