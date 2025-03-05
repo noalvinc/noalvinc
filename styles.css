@@ -5,11 +5,14 @@
     box-sizing: border-box;
 }
 
+/* Importación de la fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 /* Estilo del cuerpo de la página */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;  /* Blanco */
+    color: #333; /* Gris oscuro para el texto */
     line-height: 1.6;
 }
 
@@ -22,14 +25,16 @@ body {
 
 /* Estilos para el encabezado */
 header {
-    background-color: #1E88E5;
+    background-color: #1E88E5; /* Azul */
     color: white;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
 header nav ul {
@@ -45,7 +50,8 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 header nav ul li a:hover {
@@ -62,8 +68,9 @@ section {
 }
 
 section h2 {
-    font-size: 2rem;
-    color: #1E88E5;
+    font-size: 2.5rem;
+    color: #1E88E5; /* Azul */
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -79,31 +86,31 @@ ul {
 }
 
 ul li {
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
 }
 
 ul li strong {
-    color: #1E88E5;
+    color: #1E88E5; /* Azul */
 }
 
 /* Estilo para los testimonios */
 blockquote {
     background-color: #f4f4f4;
-    border-left: 5px solid #1E88E5;
+    border-left: 5px solid #1E88E5; /* Azul */
     padding: 15px;
     margin: 20px 0;
     font-style: italic;
 }
 
 blockquote p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #555;
 }
 
 /* Estilos del pie de página */
 footer {
-    background-color: #1E88E5;
+    background-color: #1E88E5; /* Azul */
     color: white;
     text-align: center;
     padding: 15px 0;
@@ -111,6 +118,7 @@ footer {
 
 footer p {
     font-size: 1rem;
+    font-weight: 400;
 }
 
 /* Estilo para enlaces de navegación cuando se pasa el ratón */
@@ -125,7 +133,7 @@ a:hover {
     }
 
     header h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     header nav ul {
@@ -138,7 +146,7 @@ a:hover {
     }
 
     section h2 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     footer p {
